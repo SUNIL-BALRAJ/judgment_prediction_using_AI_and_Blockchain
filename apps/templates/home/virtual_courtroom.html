@@ -1,0 +1,131 @@
+{% extends "layouts/base2.html" %}
+
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<style>
+
+th {
+  text-align: center;
+}
+
+td{
+text-align: center;
+}
+
+td.left{
+text-align: left;
+width: 1px;
+white-space: nowrap;
+}
+
+td.fitwidth {
+    width: 1px;
+    white-space: nowrap;
+}
+
+</style>
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+<body>
+  <h1 style="color: black;"> Case Manager Dashboard </h1>
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+  <div class="col-12">
+    <div class="card card-chart">
+      <div class="card-header">
+        
+
+        
+        <h2 >Recents</h2>
+        <table class="table align-middle mb-0" style="table-layout: auto;">
+          <thead class="bg-dark">
+            <tr>
+              <th>Petition</th>
+              <th>Case Type</th>
+              <th>Date Filed</th>
+              <th>Judge Name</th>
+              <!-- <th>Num of Hearings</th> -->
+              <!-- <th>Case Priority</th>
+              <th>Case Allocation</th> -->
+              <!-- <th>Dashboard View</th> -->
+  
+            </tr>
+          </thead>
+          <tbody>
+            {% for f in files %}
+            <tr>
+              
+              <td class="center">
+  
+                    <p class="fw-bold mb-1">{{ f.uploadfile_name }}</p>
+              </td>
+
+              <td class="center">
+                <p class="fw-normal mb-1">{{ f.category }}</p>
+
+            </td>
+               
+            <td class="center">
+              <p class="fw-normal mb-1">{{ f.date_filed }}</p>
+
+          </td>
+          
+              
+          <td class="center">
+            <p class="fw-normal mb-1">{{ f.judge }}</p>
+        </td>
+          
+      </td>
+      <!-- <td class="center">
+        <p class="fw-normal mb-1">{{ f.num_hearings }}</p>
+
+    </td>
+
+          <td class="center">
+            <p class="btn btn-warning">{{ f.priority }}</p>
+
+        </td> -->
+            
+        <td>
+          <form action="{% url 'allocate_judges' id=f.id%}" method='POST' enctype="multipart/form-data">
+
+          {% csrf_token %}
+        <!-- <button type="submit" class="btn btn-default" id="add-btn">Allocate Judges</button> -->
+      </form>
+        </td>  
+   
+              <td >
+                  <form action="{% url 'hearing_home' %}" method='POST' enctype="multipart/form-data">
+  
+                  {% csrf_token %}
+                <button type="submit" class="btn btn-default" id="add-btn">Virtual Courtroom</button>
+              </form>
+                </td>  
+  
+      
+              
+            </tr>
+            {% empty %}
+            <p>No files added.</p>
+            {% endfor %}
+  
+          </tbody>
+        </table>
+  
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+</body>
+
+
+
+{% endblock content %}

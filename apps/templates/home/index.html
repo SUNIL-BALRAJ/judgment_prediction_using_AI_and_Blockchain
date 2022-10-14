@@ -1,0 +1,183 @@
+<center>
+  <img align="center" width="200" height="40" alt="India" src="/static/assets/img/logo4.jpeg" usemap="#india" ismap="ismap">
+</center>
+{% extends "layouts/base.html" %}
+{% block title %} Home {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<style>
+  .container{
+    width: 1500px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+.container .card{
+  position: relative;
+  cursor: pointer;
+
+}
+.container .card .face{
+  width: 250px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.container .card:hover .face.face1{
+  background: #cdd4cf;
+  transform: translateY(0);
+}
+.container .card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+  background-color: black;
+}
+.container .card:hover .face.face2{
+  transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+}
+.container .card .face.face1 .content{
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+  max-width: 200px;
+}
+
+.container .card .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+.container .card .face.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
+</style>
+{% endblock stylesheets %}
+
+
+{% block content %}
+
+
+{% comment %} &nbsp &nbsp &nbsp  <img src="https://nitandhra.ac.in/main/images/akam.jpg" width="225"  height="80"> {% endcomment %}
+
+
+<center>
+  <img align="center" width="800" height="400" alt="India" src="/static/assets/img/index.jpg" usemap="#india" ismap="ismap">
+
+  <div class="container">
+    <div class="card">
+       <div class="face face1">
+          <div class="content">
+             <img src="/static/assets/img/news1.jpg">
+          </div>
+       </div>
+       <div class="face face2">
+          <div class="content">
+             <p style="color:black;">Advise States To Implement Digital DIN System : Supreme Court To Centre & GST Council</p>
+             <a href="https://www.livelaw.in/top-stories/supreme-court-gst-council-digital-din-system-indirect-tax-pradeep-goyal-vs-union-of-india-2022-livelaw-sc-654-205530">Read More</a>
+          </div>
+       </div>
+    </div>
+    <br>
+    <div class="card">
+       <div class="face face1">
+          <div class="content">
+             <img src="/static/assets/img/news2.jpg">
+          </div>
+       </div>
+       <div class="face face2">
+          <div class="content">
+             <p style="color:black;">Caste Committee Clean Chit To NCB Officer Sameer Wankhede, FIR Against Nawab Malik For Defamation Under SC/ST Act</p>
+             <a href="https://www.livelaw.in/news-updates/sameer-wankhede-caste-committee-nawab-malik-fir-sc-st-act-206536">Read More</a>
+          </div>
+       </div>
+    </div>
+    <br>
+      <div class="card">
+       <div class="face face1">
+          <div class="content">
+             <img src="/static/assets/img/news3.jpeg">
+          </div>
+       </div>
+       <div class="face face2">
+          <div class="content">
+             <p style="color:black;">Standard Of Proof For Accused To Rebut Presumption U/S 139 NI Act Is That Of 'Preponderance Of Probabilities': Jharkhand High Court</p>
+             <a href="https://www.livelaw.in/news-updates/jharkhand-high-court-negotiable-instruments-act-section-139-preponderance-of-probabilities-206528">Read More</a>
+          </div>
+       </div>
+      </div>
+    <br>
+    <div class="card">
+      <div class="face face1">
+         <div class="content">
+            <img src="/static/assets/img/news4.jpeg">
+         </div>
+      </div>
+      <br>
+      <div class="face face2">
+         <div class="content">
+            <p style="color:black;">Unbelievable That Man Would Take Family Members To Victim's House With A Marriage Proposal & Rape Her": MP High Court Quashes Case</p>
+            <a href="https://www.livelaw.in/news-updates/unbelievable-man-take-family-members-victim-house-marriage-proposal-rape-mp-high-court-quashes-case-206535">Read More</a>
+         </div>
+      </div>
+   </div>
+  </div>
+
+  
+
+
+    {% endblock content %}
+
+    <!-- Specific Page JS goes HERE  -->
+    {% block javascripts %}
+    
+      <script>
+        $(document).ready(function() {
+          // Javascript method's body can be found in assets/js/demos.js
+          demo.initDashboardPageCharts();
+    
+        });
+      </script>
+    
+    {% endblock javascripts %}
+    

@@ -1,0 +1,66 @@
+{% extends "layouts/base.html" %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="col-6">
+    <div class="center">
+      <p style="text-align:center;">
+        <img src="https://blog.ipleaders.in/wp-content/uploads/2021/01/Criminal-Law.jpg">
+      </p>
+    </div>
+        </img>
+</div>
+
+  <br>
+
+<div class="row-md-8 col-md-12">
+    <div class="card card-chart">
+      <div class="card-header">
+        <h2 class="card-title">Section Defenition</h2>
+      </div>
+      <form action="{% url 'sec' %}" method="POST" role="form">    
+        {% csrf_token %}    
+        <label for="SecNo"> 
+            {% comment %} <h4> &nbsp; &nbsp; Please enter the Section Number that has to be defined: </h4> {% endcomment %}
+         
+        </label>
+         <br>
+            {% comment %} &nbsp; &nbsp; &nbsp;  <input type="number" id="SecNo" name="SecNo" minlength="1" maxlength="4" required> {% endcomment %}
+            <div class="col-6">
+              <input type="text" class="form-control" id="SecNo" name="SecNo" placeholder="Enter the Section Number">
+            </div>
+
+            <br>
+         <br>
+         <div class="col">
+          <div class="col-md-6"> <input class="btn btn-primary" type="submit" value="Submit"> </div>
+          </div>
+         <br>
+         <br>
+         
+     </form>
+     
+    </div>
+</div>
+
+
+
+<div class="row-md-8 col-md-12" id="hidden">
+    <div class="card card-chart">
+      <div class="card-header">
+        <h2 class="card-title">Section Details</h2>
+        <p> {{output}} </p>
+      </div>
+     <br>
+    </div>
+  </div>
+   
+{% endblock content %}
+
+{% block javascripts %}
+    
+    
+    {% endblock javascripts %}

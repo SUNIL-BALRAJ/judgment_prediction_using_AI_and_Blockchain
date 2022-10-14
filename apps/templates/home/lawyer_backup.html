@@ -1,0 +1,201 @@
+{% extends "layouts/base2.html" %}
+
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<style>
+
+th {
+  text-align: center;
+}
+
+td{
+text-align: center;
+}
+
+td.left{
+text-align: left;
+width: 1px;
+white-space: nowrap;
+}
+
+td.fitwidth {
+    width: 1px;
+    white-space: nowrap;
+}
+
+</style>
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+<body>
+  <h1> Lawyers Dashboard </h1>
+  <div class="row">
+  <div class="col-lg-12 col-md-12">
+    <div class="col-12">
+      <div class="card card-chart">
+        <div class="card-header ">
+            <div class="col-sm-6 text-left">
+              
+              <h1>Provide Petition Details</h1>
+              <form action="" method='POST' enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6"> {{ form.uploadfile_name }} </div>
+                  <div class="col-md-6"> {{ form.uploadfile_short_desc }} </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-6"> {{ form.category }} </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-6"> {{ form.uploadfile }} </div>
+                </div>
+                <br>
+                <div class="row">
+                <div class="col-md-6"> <input class="btn btn-primary" type="submit" value="Submit"> </div>
+                </div>
+                
+              
+                  
+                <!-- <input type="submit" value="Submit"> -->
+            </form>
+            </div>
+            <br>
+
+
+      
+          <!-- <form action="{% url 'adddb' %}" method="POST" role="form">
+            {% csrf_token %}
+            <div class="form-group">
+               <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" id="add-btn">Export Existing Cases</button>
+                </span>
+  
+            </div>
+          </form> -->
+          <!-- <br>
+          <br> -->
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+<div class="col-12">
+  <div class="card card-chart">
+    <div class="card-header">
+      <h2 >Recents</h2>
+      <table class="table align-middle mb-0" style="table-layout: auto;">
+        <thead class="bg-dark">
+          <tr>
+            <th>Petition</th>
+            <th>Case Type</th>
+            <th>Description</th>
+            <th>Courtroom</th>
+            <th>Analytics</th>
+            {% comment %} <th>AI Case Analysis</th> {% endcomment %}
+
+          </tr>
+        </thead>
+        <tbody>
+          {% for f in files %}
+          <tr>
+            
+            <td class="fitwidth">
+
+                  <p class="fw-bold mb-1">{{ f.uploadfile_name }}</p>
+            </td>
+            <td class="left">
+              <p class="fw-normal mb-1">{{ f.category }}</p>
+
+          </td>
+          
+            <td class="left">
+                <p class="fw-normal mb-1">{{ f.uploadfile_description }}</p>
+
+            </td>
+ 
+            <td >
+                <form action="{% url 'hearing_home' %}" method='POST' enctype="multipart/form-data">
+
+                {% csrf_token %}
+              <button type="submit" class="btn btn-default" id="add-btn">Virtual Courtroom</button>
+            </form>
+              </td>  
+
+            <td >
+              <form action="{% url 'all_analysis' id=f.id %}" method='POST' enctype="multipart/form-data">
+                {% csrf_token %}
+              <button type="submit" class="btn btn-default" id="add-btn">Perform AI Analysis</button>
+            </form>
+              </td>            
+
+            
+          </tr>
+          {% empty %}
+          <p>No files added.</p>
+          {% endfor %}
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- 
+  <div class="col-lg-12 col-md-12">
+    <div class="col-12">
+      <div class="card card-chart">
+        <div class="card-header ">
+          <div class="row">
+            <div class="col-sm-6 text-left">
+              <h2 class="card-title">Similar Cases</h2> -->
+
+              <!-- <table class="table align-middle mb-0" style="table-layout: auto;">
+                <thead class="bg-dark">
+                  <tr>
+                    <th>Case Name</th>
+                    <th>View</th>
+                  </tr>
+                </thead> -->
+                <!-- <tbody>
+                  {% for sim_case in similarcases %}
+                  <tr>
+                      <td class="fitwidth">
+                        <p class="fw-bold mb-1">{{ sim_case }}</p>
+                    </td>
+
+                    <td >
+                      <button type="submit" class="btn btn-default" id="add-btn">View Case</button>
+                      </td>  
+                  </tr>
+              {% endfor %}
+
+              </tbody> -->
+
+            </div>
+          
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+{% endblock content %}

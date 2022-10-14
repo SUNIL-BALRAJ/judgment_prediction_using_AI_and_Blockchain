@@ -1,0 +1,462 @@
+{% extends "layouts/base.html" %}
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<style>
+  .distribution-map {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .distribution-map > img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .distribution-map .map-point {
+    cursor: pointer;
+    outline: 10px;
+    z-index: 0;
+    position: absolute;
+    width:1px;
+    height: 10px;
+    border-radius: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out, z-index 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
+    transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    background: rgba(26, 26, 26, 0.85);
+    {% comment %} border: 5px solid #7fcff7; {% endcomment %}
+  }
+
+  .distribution-map .map-point .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: overlay;
+  }
+{% comment %} circle {% endcomment %}
+  .distribution-map .map-point:active, .distribution-map .map-point:focus {
+    margin: 0;
+    padding: 10;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    width: 300px;
+    height: 200px;
+    color: #e5e5e5;
+    z-index: 1;
+    transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+  }
+
+  .distribution-map .map-point:active .content, .distribution-map .map-point:focus .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0s, 0s;
+    transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    overflow: hidden;
+  }
+  .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
+    color: #afe1fa;
+  }
+
+  .description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgba(229, 229, 229, 0.7);
+  }
+   
+  div, img, footer {
+    position: relative;
+    box-sizing: border-box;
+  }
+   
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    font-weight: 200;
+  }
+  .container {
+    padding-right: 1px;
+    padding-left: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  img {
+    max-width: 100%
+  }
+  .image {
+    flex-basis: 40%
+    height: 600px;
+    width: 250%;
+  }
+  .text {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+ 
+ 
+</style>
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+<h1 style="color:black;"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Indian High Courts </h1>
+
+<div class="distribution-map">
+  <center>
+  <img src="/static/assets/img/hindia.png" width="600" height="600"  alt="" />
+  </center>
+  <button class="map-point" style="top:37%;left:37%">
+    <div class="content">
+        <div class="centered-y">
+          <p><u><b>Rajasthan</b></u></p>
+          <p>The High Court of Rajasthan was established on 29 August 1949 under the Rajasthan High Court Ordinance. The High Court of Rajasthan was inaugurated by the Rajpramukh, Maharaja Sawai Man Singh.</p>
+        </div>
+    </div>
+</button>
+  <button class="map-point" style="top:23.5%;left:39.5%">
+      <div class="content">
+          <div class="centered-y">
+            <br>
+            <p><u><b>Punjab</b></u></p>
+            <p>Punjab High Court which was formerly known as Lahore High Court, was established on 21 March 1919. This court building is known as the Palace of Justice.</p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:37%;left:47.5%">
+      <div class="content">
+          <div class="centered-y">
+            <p><u><b>Uttar Pradesh</b></u></p>
+            <p>The High Court of Judicature at Allahabad is based in Prayagraj that has jurisdiction over the state of Uttar Pradesh. It was established on 17 March 1866 and is one of the oldest high courts to be established in India.</p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:87%;right:55%">
+      <div class="content">
+          <div class="centered-y">
+              <h2></h2>
+              <br>
+              <p><u><b>Tamilnadu</b></u></p>
+              <p>The High Court of Judicature at Madras, is established at the Presidency Towns by Letters Patent granted by Her Majesty Queen Victoria, on 26th June 1862. <p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:89%;right:58.6%">
+      <div class="content">
+          <div class="centered-y">
+            <p><u><b>Kerala</b></u></p>
+            <p>The High Court of Kerala was established on 01-11-1956 with its seat at Ernakulam. Its territorial jurisdiction extends to the entire State of Kerala and the Union Territory of</p><p>Lakshadweep.</p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:76%;right:59.5%">
+      <div class="content">
+          <div class="centered-y">
+            <br>
+            <br>
+            <p><u>Karnataka</u></p>
+            <p>In 1881, the office of the Chief Judge was created and the designated person had the utmost authority in the court. </p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:49%;left:42%">
+      <div class="content">
+          <div class="centered-y">
+            <br>
+            <p><u><b>Madhya Pradesh</b></u></p>
+            <p>Nagpur High Court, established by Letters Patent dated 02-01-1936, continued even after the adoption of the constitution of India on 26-01-1950 by virtue of Articles 225 & 372 &nbsp &nbsp &nbsp thereof.</P>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:55%;left:48.5%">
+    <div class="content">
+        <div class="centered-y">
+          <br>
+          <p><u><b>Chattisgarh</b></u></p>
+          <p>The Chhattisgarh High Court, located </p><p> at Village Bodri, Bilaspur with jurisdiction over the state of Chhattisgarh was established on 1 November 2000.</p>
+          </div>
+    </div>
+</button>
+  <button class="map-point" style="top:59.5%;right:60.5%">
+    <div class="content">
+        <div class="centered-y">
+          <br>
+          <p><u><b>Maharastra</b></u></p>
+          <p>The High Court of Bombay is the high court of the states of Maharashtra and Goa in India. It is seated primarily at Mumbai, and is one of the oldest high courts in India.</p>
+        </div>
+    </div>
+</button>
+<button class="map-point" style="top:75.5%;right:55%">
+  <div class="content">
+      <div class="centered-y">
+        <br>
+        <p><u><b>Andhra Pradesh</b></u></p>
+        <p>On 1st January 2019, a separate Andhra Pradesh High Court was established after the bifurcation of the earlier state into Telangana and Andhra Pradesh. </p>
+      </div>
+  </div>
+</button>
+</div>
+
+  <br>
+  <br>
+  <br>
+  <br> 
+</br>
+
+<div class="row">
+<div class="row-md-8 col-md-12">
+<div class="container">
+  <div class="image">
+    <img src="/static/assets/img/hcf.png">
+  </div>
+  <div class="text">
+   
+        <blockquote>
+          <p class="blockquote blockquote-primary" align="justify"> 
+          <i>
+           The High Court is the supreme judicial body in a state. According to Article 214, each state of India shall have a High Court. However, Article 231 also mentions that there can be a common High Court for two or more States or for two or more states and a union territory.      
+           <br> <br> <b>Civil courts:</b> Civil courts deal with civil cases. Civil law is applied in disputes when one person sues another person or entity. Examples of civil cases include divorce, eviction, consumer problems, debt or bankruptcy, etc.
+           <br> <br> <b>Criminal Courts:</b> Criminal Courts are established to impart justice to people and punish the offenders that go against the law. Criminal courts are established to solve serious crimes such as assault, robbery, murder, arson, rape and other kinds of crimes.
+          </i>
+          </p>
+        </blockquote>
+     
+  </div>
+</div>
+</div>
+
+<br>
+<br>
+
+  <div class="card ">
+            <div class="card-header">
+            <br>
+            <h3 class="title">&nbsp &nbsp &nbsp High Courts Of India </h3>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table tablesorter " id="">
+                <thead class=" text-primary">
+                  <tr>
+                    <th class="text-center">
+                        High Court
+                    </th>
+                    <th class="text-center">
+                        Established
+                    </th>
+                    <th class="text-center">
+                        Act Established
+                    </th>
+                    <th class="text-center">
+                      Judges (Permanent Bench)
+                    </th>
+                    <th class="text-center">
+                        Chief Justice
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">
+                            Allahabad
+                        </td>
+                        <td class="text-center">
+                            17 March 1866
+                        </td>
+                        <td class="text-center">
+                            Indian High Courts Act 1861                    </td>
+                        <td class="text-center">
+                            160
+                        </td>
+                        <td class="text-center">
+                          Rajesh Bindal
+                        </td>
+                      </tr>
+                  <tr>
+                    <td class="text-center">
+                        Andhra Pradesh 
+                    </td>
+                    <td class="text-center">
+                        1 January 2019
+                    </td>
+                    <td class="text-center">
+                        Andhra Pradesh Reorganisation Act, 2014                </td>
+                    <td class="text-center">
+                      37
+                    </td>
+                    <td class="text-center">
+                        Prasanth Kumar Mishra
+                      </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                        Bombay
+                    </td>
+                    <td class="text-center">
+                        14 August 1862
+                    </td>
+                    <td class="text-center">
+                        Indian High Courts Act 1861
+                    </td>
+                    <td class="text-center">
+                        94
+                    </td>
+                    <td class="text-center">
+                      Dipankar Datta
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                        Calcutta
+                    </td>
+                    <td class="text-center">
+                        2 July 1862
+                   </td>
+                    <td class="text-center">
+                        Indian High Courts Act 1861
+                    </td>
+                    <td class="text-center">
+                        72
+                    </td>
+                    <td class="text-center">
+                      Prakash Shrivastava
+                    </td>
+    
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                        Delhi
+                    </td>
+                    <td class="text-center">
+                        31 October 1966
+                    </td>
+                    <td class="text-center">
+                        Delhi High Court Act, 1966
+                    </td>
+                    <td class="text-center">
+                        60
+                    </td>
+                    <td class="text-center">
+                      Satish Chandra Sharma
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      Karnataka
+                    </td>
+                    <td class="text-center">
+                        23 May 1884
+                    </td>
+                    <td class="text-center">
+                        Mysore High Court Act, 1884
+                    </td>
+                    <td class="text-center">
+                        62
+                    </td>
+                    <td class="text-center">
+                      Ritu Raj Awasthi
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                        Madhya Pradesh
+                    </td>
+                    <td class="text-center">
+                        2 January 1936
+                    </td>
+                    <td class="text-center">
+                        Government of India Act 1935
+                    </td>
+                    <td class="text-center">
+                        53
+                    </td>
+                    <td class="text-center">
+                      Ravi Malimath
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                        Madras
+                    </td>
+                    <td class="text-center">
+                        15 August 1862
+                    </td>
+                    <td class="text-center">
+                        Indian High Courts Act 1861
+                    </td>
+                    <td class="text-center">
+                        75
+                    </td>
+                    <td class="text-center">
+                      Munishwar Nath Bhandari
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                        Punjab & Haryana
+                    </td>
+                    <td class="text-center">
+                        15 August 1947
+                    </td>
+                    <td class="text-center">
+                        Punjab High Court Ordinance, 1947
+                    </td>
+                    <td class="text-center">
+                        85
+                    </td>
+                    <td class="text-center">
+                      Ravi Shankar Jha
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                        Rajasthan
+                    </td>
+                    <td class="text-center">
+                        21 June 1949
+                    </td>
+                    <td class="text-center">
+                        Rajasthan High Court Ordinance, 1949
+                    </td>
+                    <td class="text-center">
+                        50
+                    </td>
+                    <td class="text-center">
+                      Sambhaji Shiwaji Shinde
+                    </td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

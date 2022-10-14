@@ -1,0 +1,93 @@
+{% extends "layouts/base2.html" %}
+
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<style>
+
+th {
+  text-align: center;
+}
+
+td{
+text-align: center;
+}
+
+td.left{
+text-align: left;
+width: 1px;
+white-space: nowrap;
+}
+
+td.fitwidth {
+    width: 1px;
+    white-space: nowrap;
+}
+
+</style>
+
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="row">
+<body>
+
+    <div class="col-12">
+        <div class="card card-chart">
+          <div class="card-header">
+            <h2 class="card-title">Recents</h2>
+            <table class="table align-middle mb-0" style="table-layout: auto;">
+              <thead class="bg-dark">
+                <tr>
+                  <th>Query</th>
+                  <th>Query Type</th>
+                  <th>Query Description</th>
+                  <th>Actions</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                {% for f in files %}
+                <tr>
+                  
+                  <td class="fitwidth">
+
+                        <p class="fw-bold mb-1">{{ f.uploadfile_name }}</p>
+                  </td>
+                  <td class="left">
+                    <p class="fw-normal mb-1">{{ f.uploadfile_short_desc }}</p>
+
+                </td>
+                
+                  <td class="left">
+                      <p class="fw-normal mb-1">{{ f.uploadfile_description }}</p>
+
+                  </td>
+                  
+                  
+                  <td >
+                    <form action="{% url 'all_analysis' id=f.id %}" method='POST' enctype="multipart/form-data">
+                      {% csrf_token %}
+                    <button type="submit" class="btn btn-default" id="add-btn">Analyse Case</button>
+                  </form>
+                    </td>           
+
+                  
+                </tr>
+                {% empty %}
+                <p>No files added.</p>
+                {% endfor %}
+    
+              </tbody>
+            </table>
+
+
+          </div>
+        </div>
+      </div>
+
+</body>
+
+{% endblock content %}

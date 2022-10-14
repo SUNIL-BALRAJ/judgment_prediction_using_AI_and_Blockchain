@@ -1,0 +1,65 @@
+{% extends "layouts/base.html" %}
+
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+
+
+<body>
+  <div class="col-lg-12 col-md-12">
+    <div class="col-12">
+      <div class="card card-chart">
+        <div class="card-header ">
+          <div class="row">
+            <div class="col-sm-6 text-left">
+              
+              <h2 class="card-title">Case to be Analysed</h2>
+              
+        <br>
+        <br>
+
+
+          <form action="{% url 'trans' %}" method='POST' enctype="multipart/form-data">
+              {% csrf_token %}
+              {{form.as_p}}
+              <input type="submit" value="Submit">
+
+              <div class="dropdown" style="position: absolute; top: 0; right: 0; width: 100px; text-align:right;">
+                <select name="dropdown">
+                  <option selected="selected" disabled>Select Language</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Tamil">Tamil</option>
+                  <option value="Kannada">Kannada</option>
+                  <option value="Telugu">Telugu</option>
+              </select>
+    
+              </div>
+          </form>
+
+          </div>
+          <div class="row-md-8 col-md-12" id="hidden">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h2 class="card-title">Translated Case</h2>
+                <p>Selected Language: {{language}} </p>
+                <br>
+                <p> {{output}} </p>
+              </div>
+             <br>
+            </div>
+          </div>
+      
+          
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+{% endblock content %}

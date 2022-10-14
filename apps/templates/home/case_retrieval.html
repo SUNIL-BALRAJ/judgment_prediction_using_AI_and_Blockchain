@@ -1,0 +1,210 @@
+{% extends "layouts/base2.html" %}
+
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<style>
+
+th {
+  text-align: center;
+}
+
+td{
+text-align: center;
+}
+
+td.left{
+text-align: left;
+width: 1px;
+white-space: nowrap;
+}
+
+td.fitwidth {
+    width: 1px;
+    white-space: nowrap;
+}
+
+</style>
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+<body>
+    <h1 style="color: black;"> Petitioner Dashboard </h1>
+    <h2 style="color: black;" >Recents</h2>
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+<div class="col-12">
+  <div class="card card-chart">
+    <div class="card-header">
+      <div class="col-sm-11">
+      
+      <table class="table align-middle mb-0" style="table-layout: auto;">
+        <thead class="bg-dark">
+          <tr>
+            <th>Case</th>
+            <th>Lawyer Name</th>
+            <th>Case Type</th>
+            <th>Description</th>
+            
+            <!-- <th>Actions</th> -->
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td class="center">
+
+                  <p class="fw-bold mb-1"> Petition 1</p>
+            </td>
+            <td class="center">
+              <p class="fw-normal mb-1">Lawyer 1</p>
+
+          </td>
+            <td class="center">
+              <p class="fw-normal mb-1">Criminal Matters</p>
+
+          </td>
+          
+            <td class="center">
+                <p class="fw-normal mb-1">Appellant was a Patwari working at village V1 in the year 1976.</p>
+
+            </td>
+            
+            
+            <!-- <td class="center">
+              <form action="" method='POST' enctype="multipart/form-data">
+                {% csrf_token %}
+              <button type="submit" class="btn btn-default" id="add-btn">Check Case Status</button>
+            </form>
+              </td>            -->
+
+            
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- 
+  <div class="col-lg-12 col-md-12">
+    <div class="col-12">
+      <div class="card card-chart">
+        <div class="card-header ">
+          <div class="row">
+            <div class="col-sm-6 text-left">
+              <h2 class="card-title">Similar Cases</h2> -->
+
+              <!-- <table class="table align-middle mb-0" style="table-layout: auto;">
+                <thead class="bg-dark">
+                  <tr>
+                    <th>Case Name</th>
+                    <th>View</th>
+                  </tr>
+                </thead> -->
+                <!-- <tbody>
+                  {% for sim_case in similarcases %}
+                  <tr>
+                      <td class="fitwidth">
+                        <p class="fw-bold mb-1">{{ sim_case }}</p>
+                    </td>
+
+                    <td >
+                      <button type="submit" class="btn btn-default" id="add-btn">View Case</button>
+                      </td>  
+                  </tr>
+              {% endfor %}
+
+              </tbody> -->
+
+    
+<h2 style="color: black;">Choose your Lawyers and Contacts</h2>
+  
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+      </div>
+      <div class="card-body all-icons">
+        <div class="row">
+            <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+              <div class="font-icon-detail">
+              <img src="/static/assets/img/ahmedabad.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/ahmedabad.html">Ahmedabad</a></p>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/karnataka.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/bengaluru.html">Bengaluru</a></p>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/chandigarh.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/chandigarh.html">Chandigarh</a></p>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/chennai.png" width="90" height="50" ></img>
+              <p><a href="http://127.0.0.1:8000/chennai.html"><h5>Chennai</h5></a></p>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/delhi.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/delhi.html">Delhi</a></p>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/hyderabad.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/hyderabad.html">Hyderabad</a></p>
+            </div>z
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/kerala.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/kochi.html">Kochi</a></p>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/calcutta.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/kolkata.html">Kolkata</a></p>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/bombay.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/mumbai.html">Mumbai</a></p>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <img src="/static/assets/img/pune1.png" width="70" height="70" ></img>
+              <p><a href="http://127.0.0.1:8000/pune.html">Pune</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+
+{% endblock content %}

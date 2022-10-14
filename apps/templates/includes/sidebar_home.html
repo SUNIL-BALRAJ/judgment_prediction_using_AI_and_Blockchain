@@ -1,0 +1,76 @@
+
+
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+          <div class="logo">
+            <a target="_blank" rel="sponsored noopener noreferrer" 
+               href="https://appseed.us/admin-dashboards/django-dashboard-black" class="simple-text logo-mini">
+              
+            </a>
+            <a target="_blank" rel="sponsored noopener noreferrer" 
+               href="https://appseed.us/admin-dashboards/django-dashboard-black" class="simple-text logo-normal">
+              Dashboard
+            </a>
+          </div>
+  
+          <ul class="nav">
+          {% if request.user.is_authenticated %}
+  
+            <li class="{% if 'index' in segment %} active {% endif %}">
+              <a href="/">
+                <i class="tim-icons icon-world"></i>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="{% if 'high_court' in segment %} active {% endif %}">
+              <a href="/high_court.html">
+                <i class="tim-icons icon-bank"></i>
+                <p>High Court</p>
+              </a>
+            </li>
+            <li class="{% if 'analysis' in segment %} active {% endif %}">
+              <a href="{% url 'analysis' %}">
+                <i class="tim-icons icon-chart-bar-32"></i>
+                <p>Case Analysis</p>
+              </a>
+            </li>
+            <li class="{% if ' translate ' in segment %} active {% endif %}">
+              <a href="{% url 'trans' %}">
+                <i class="tim-icons icon-paper"></i>
+                <p>Translation</p>
+              </a>
+            </li>
+           
+            <li class="{% if 'page4' in segment %} active {% endif %}">
+              <a href="/page4.html">
+                <i class="tim-icons icon-single-copy-04"></i>
+                <p>pending cases</p>
+              </a>
+            </li>
+            <li class="{% if 'period_of_limitation' in segment %} active {% endif %}">
+              <a href="/limitation.html">
+                <i class="tim-icons icon-calendar-60"></i>
+                <p>Period Of Limitation</p>
+              </a>
+            </li>
+            <li class="{% if 'contact' in segment %} active {% endif %}">
+              <a href="/contact.html">
+                <i class="tim-icons icon-badge"></i>
+                <p>Contact Details</p>
+              </a>
+            </li>
+            {% else %}
+            <li class="active">
+              <a target="_blank" 
+                 href="https://appseed.us/admin-dashboards/django-dashboard-black-pro">
+                <i class="tim-icons icon-spaceship"></i>
+                <p>PRO Version</p>
+              </a>
+            </li>   
+            {% endif %}
+                      
+          </ul>
+          
+        </div>
+      </div>
+  

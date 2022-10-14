@@ -1,0 +1,211 @@
+>{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<style>
+  .distribution-map {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .distribution-map > img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .distribution-map .map-point {
+    cursor: pointer;
+    outline: 10px;
+    z-index: 0;
+    position: absolute;
+    width:1px;
+    height: 10px;
+    border-radius: 50%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out, z-index 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
+    transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    background: rgba(26, 26, 26, 0.85);
+    {% comment %} border: 5px solid #7fcff7; {% endcomment %}
+  }
+
+  .distribution-map .map-point .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: overlay;
+  }
+{% comment %} circle {% endcomment %}
+  .distribution-map .map-point:active, .distribution-map .map-point:focus {
+    margin: 0;
+    padding: 10;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    width: 300px;
+    height: 200px;
+    color: #e5e5e5;
+    z-index: 1;
+    transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+  }
+
+  .distribution-map .map-point:active .content, .distribution-map .map-point:focus .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0s, 0s;
+    transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    overflow: hidden;
+  }
+  .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
+    color: #afe1fa;
+  }
+
+  .description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgba(229, 229, 229, 0.7);
+  }
+   
+  div, img, footer {
+    position: relative;
+    box-sizing: border-box;
+  }
+   
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    font-weight: 200;
+  }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+
+<h1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Indian High Courts </h1>
+
+<div class="distribution-map">
+  <center>
+  <img src="/static/assets/img/hindia.png" width="600" height="600"  alt="" />
+  </center>
+  <button class="map-point" style="top:37%;left:37%">
+    <div class="content">
+        <div class="centered-y">
+          <p><u><b>Rajasthan</b></u></p>
+          <p>The High Court of Rajasthan was established on 29 August 1949 under the Rajasthan High Court Ordinance. The High Court of Rajasthan was inaugurated by the Rajpramukh, Maharaja Sawai Man Singh.</p>
+        </div>
+    </div>
+</button>
+  <button class="map-point" style="top:23.5%;left:39.5%">
+      <div class="content">
+          <div class="centered-y">
+            <br>
+            <p><u><b>Punjab</b></u></p>
+            <p>Punjab High Court which was formerly known as Lahore High Court, was established on 21 March 1919. This court building is known as the Palace of Justice.</p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:37%;left:47.5%">
+      <div class="content">
+          <div class="centered-y">
+            <p><u><b>Uttar Pradesh</b></u></p>
+            <p>The High Court of Judicature at Allahabad is based in Prayagraj that has jurisdiction over the state of Uttar Pradesh. It was established on 17 March 1866 and is one of the oldest high courts to be established in India.</p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:87%;right:55%">
+      <div class="content">
+          <div class="centered-y">
+              <h2></h2>
+              <br>
+              <p><u><b>Tamilnadu</b></u></p>
+              <p>The High Court of Judicature at Madras, is established at the Presidency Towns by Letters Patent granted by Her Majesty Queen Victoria, on 26th June 1862. <p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:89%;right:58.6%">
+      <div class="content">
+          <div class="centered-y">
+            <p><u><b>Kerala</b></u></p>
+            <p>The High Court of Kerala was established on 01-11-1956 with its seat at Ernakulam. Its territorial jurisdiction extends to the entire State of Kerala and the Union Territory of</p><p>Lakshadweep.</p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:76%;right:59.5%">
+      <div class="content">
+          <div class="centered-y">
+            <br>
+            <br>
+            <p><u>Karnataka</u></p>
+            <p>In 1881, the office of the Chief Judge was created and the designated person had the utmost authority in the court. </p>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:49%;left:42%">
+      <div class="content">
+          <div class="centered-y">
+            <br>
+            <p><u><b>Madhya Pradesh</b></u></p>
+            <p>Nagpur High Court, established by Letters Patent dated 02-01-1936, continued even after the adoption of the constitution of India on 26-01-1950 by virtue of Articles 225 & 372 &nbsp &nbsp &nbsp thereof.</P>
+          </div>
+      </div>
+  </button>
+  <button class="map-point" style="top:55%;left:48.5%">
+    <div class="content">
+        <div class="centered-y">
+          <br>
+          <p><u><b>Chattisgarh</b></u></p>
+          <p>The Chhattisgarh High Court, located </p><p> at Village Bodri, Bilaspur with jurisdiction over the state of Chhattisgarh was established on 1 November 2000.</p>
+          </div>
+    </div>
+</button>
+  <button class="map-point" style="top:59.5%;right:60.5%">
+    <div class="content">
+        <div class="centered-y">
+          <br>
+          <p><u><b>Maharastra</b></u></p>
+          <p>The High Court of Bombay is the high court of the states of Maharashtra and Goa in India. It is seated primarily at Mumbai, and is one of the oldest high courts in India.</p>
+        </div>
+    </div>
+</button>
+<button class="map-point" style="top:75.5%;right:55%">
+  <div class="content">
+      <div class="centered-y">
+        <br>
+        <p><u><b>Andhra Pradesh</b></u></p>
+        <p>On 1st January 2019, a separate Andhra Pradesh High Court was established after the bifurcation of the earlier state into Telangana and Andhra Pradesh. </p>
+      </div>
+  </div>
+</button>
+</div>
+
+  
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initDashboardPageCharts();
+
+    });
+  </script>
+
+{% endblock javascripts %}

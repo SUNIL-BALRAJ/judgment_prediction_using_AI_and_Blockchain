@@ -1,0 +1,368 @@
+{% extends "layouts/base2.html" %}
+
+{% block title %} UI Icons {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+
+
+<body>
+  
+
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <div class="col-12">
+      <div class="card card-chart">
+        <div class="card-header ">
+            <div class="col-sm-6 text-left">
+
+              <h1> Blockchain Document Hashing </h1>
+              
+              <h3>Upload Hearing Document</h3>
+              <form action="" method='POST' enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="row">
+                  <div class="col-md-6"> {{ form.h_uploadfile_name }} </div>
+                </div>
+                <br>
+                <div class="row">
+                  &nbsp; &nbsp; <input type="file" name="file" multiple = "true" webkitdirectory="true" directory = "true"/>
+
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-6"> {{ form.category }} </div>
+                </div>
+                <div class="row">
+                <div class="col-md-6"> <input class="btn btn-primary" type="submit" value="Get Hash"> </div> 
+                &nbsp; &nbsp; <button class="btn btn-primary" type="submit" value="submit"id=""><a href="http://127.0.0.1:8000/current_hearing.html" style="color:white;">Submit</a></button>
+                <br>
+                <br>
+                &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; <button class="btn btn-primary" type="submit" value="Get Status"id=""><a href="http://127.0.0.1:8000/current_hearing.html" style="color:white;">Get Status</a></button> 
+ 
+                 </div>
+                
+                 
+                
+              
+                  
+                <!-- <input type="submit" value="Submit"> -->
+            </form>
+            </div>
+            <br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <div class="col-12">
+      <div class="card card-chart">
+        <div class="card-header ">
+            <div class="col-sm-10 text-left">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <h3 style="color: white;"> Hash Value: {{ hash }} 
+
+   </h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <div class="col-12">
+      <div class="card card-chart">
+        <div class="card-header ">
+            <div class="col-sm-6 text-left">
+
+              <h1> Blockchain Document Verification </h1>
+              
+              <h3>Upload Hearing Document</h3>
+              <form action="" method='POST' enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="row">
+                  &nbsp; &nbsp; <input type="text" class="form-control" id="hearNo" name="hearNo" placeholder="Enter the Hearing">
+                </div>
+                <br>
+                <div class="row">
+                  &nbsp; &nbsp; <input type="file" name="file" multiple = "true" webkitdirectory="true" directory = "true"/>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-6"> {{ form.category }} </div>
+                </div>
+                <!-- <div class="row">
+                <div class="col-md-6"> <input class="btn btn-primary" type="submit" value="Verify"> </div> 
+              
+                 </div> -->
+                 <input type="button" class="btn btn-primary" name="answer" value="Verify" onclick="showDiv()" />
+                 <div class="row">
+  <div id="welcomeDiv"  style="display:none;" class="answer_list" > Verification : {{ verify }}</div>
+  
+
+   </h3>
+</div>
+                  <!-- <input type="submit" value="Submit"> -->
+            </form>
+            </div>
+            <br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+
+
+
+<!-- <div class="row">
+  <div class="col-lg-12 col-md-12">
+<div class="col-12">
+  <div class="card card-chart">
+    <div class="card-header">
+      <h2> Court Hearings </h2>
+      <table class="table align-middle mb-0" style="table-layout: auto;">
+        <thead class="bg-dark">
+          <tr>
+            <th>Date of Petition</th>
+            <th>Hearing Number</th>
+            <th>Court Name</th>
+            <th>Judge Details</th>
+            <th>Opponent Status</th>
+            <th>Actions</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="fitwidth">
+    
+                    <p class="fw-bold mb-1"> 19th August 2022</p>
+              </td>
+              <td class="fitwidth">
+    
+                <p class="fw-bold mb-1">Hearing 1 </p>
+                </td>
+                <td class="fitwidth">
+    
+                    <p class="fw-bold mb-1"> Supreme Court </p>
+                </td>
+
+                <td class="fitwidth">
+    
+                    <p class="fw-bold mb-1">Judge 1 </p>
+                    </td>
+                
+                <td class="left">
+                    <p class="badge  badge-warning rounded-pill d-inline"> Accepted </p>
+                </td>
+             
+                
+                <td class="left">
+                    <button type="submit" class="btn btn-default" id="add-btn">Resend Notifications</button>
+                    </td>
+                
+              </tr>
+          <tr>
+            <td class="fitwidth">
+
+                <p class="fw-bold mb-1"> 25th August 2022</p>
+          </td>
+          <td class="fitwidth">
+
+            <p class="fw-bold mb-1"> Hearing 2 </p>
+      </td>
+      <td class="fitwidth">
+    
+        <p class="fw-bold mb-1"> Supreme Court </p>
+    </td>
+
+      <td class="fitwidth">
+    
+        <p class="fw-bold mb-1">Judge 1 </p>
+        </td>
+            
+            <td class="left">
+                <p class="badge  badge-primary rounded-pill d-inline"> No Actions </p>
+            </td>
+         
+         
+            <td class="left">
+                <button type="submit" class="btn btn-default" id="add-btn">Resend Notifications</button>
+            </td>
+            
+          </tr>
+
+          <tr>
+            <td class="fitwidth">
+
+                <p class="fw-bold mb-1"> 23rd August 2022</p>
+          </td>
+            <td class="fitwidth">
+
+                  <p class="fw-bold mb-1"> Hearing 3 </p>
+            </td>
+            <td class="fitwidth">
+    
+                <p class="fw-bold mb-1"> Supreme Court </p>
+            </td>
+
+
+            <td class="fitwidth">
+
+                <p class="fw-bold mb-1"> Judge 1 </p>
+          </td>
+           
+            <td class="left">
+                <p class="badge  badge-primary rounded-pill d-inline"> No Actions </p>
+            </td>
+         
+         
+            <td class="left">
+                <button type="submit" class="btn btn-default" id="add-btn">Resend Notifications</button>
+            </td>
+            
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br> <br>
+
+      <h2> Court Trials </h2>
+
+      <table class="table align-middle mb-0" style="table-layout: auto;">
+        <thead class="bg-dark">
+          <tr>
+            <th>Date of Trial</th>
+            <th>Trial Number</th>
+            <th>Court Name</th>
+            <th>Judge Details</th>
+            <th>Current Trial Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="fitwidth">
+    
+                    <p class="fw-bold mb-1"> 19th August 2022</p>
+              </td>
+              <td class="fitwidth">
+    
+                <p class="fw-bold mb-1"> Trial 1 </p>
+                </td>
+
+                <td class="fitwidth">
+    
+                    <p class="fw-bold mb-1"> Supreme Court </p>
+                </td>
+
+                <td class="fitwidth">
+    
+                    <p class="fw-bold mb-1"> Judge 1 </p>
+                </td>
+
+                <td class="fitwidth">
+    
+                    <p class="badge badge-success rounded-pill d-inline"> Passed </p>
+                </td>
+
+             
+                <td class="left">
+                  <form action="" method="POST" role="form">
+                    {% csrf_token %}
+                    <div class="form-group">
+                       <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default" id="add-btn">View Judgement</button>
+                      </span>
+          
+                    </div>
+                  </form> 
+                    </td>
+                
+              </tr>
+          
+          
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+</div>
+</div> -->
+
+  
+  
+  <!-- 
+    <div class="col-lg-12 col-md-12">
+      <div class="col-12">
+        <div class="card card-chart">
+          <div class="card-header ">
+            <div class="row">
+              <div class="col-sm-6 text-left">
+                <h2 class="card-title">Similar Cases</h2> -->
+  
+                <!-- <table class="table align-middle mb-0" style="table-layout: auto;">
+                  <thead class="bg-dark">
+                    <tr>
+                      <th>Case Name</th>
+                      <th>View</th>
+                    </tr>
+                  </thead> -->
+                  <!-- <tbody>
+                    {% for sim_case in similarcases %}
+                    <tr>
+                        <td class="fitwidth">
+                          <p class="fw-bold mb-1">{{ sim_case }}</p>
+                      </td>
+  
+                      <td >
+                        <button type="submit" class="btn btn-default" id="add-btn">View Case</button>
+                        </td>  
+                    </tr>
+                {% endfor %}
+  
+                </tbody> -->
+  
+              </div>
+            
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script>
+  function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+</script>
+{% endblock javascripts %}

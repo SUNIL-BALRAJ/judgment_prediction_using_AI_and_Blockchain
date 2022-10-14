@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="700"
+   height="600"
+   id="svg2">
+  <defs
+     id="defs4">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3978"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-3"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-5"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-1"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-8"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-0"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-4"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="marker5092"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path5094"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-9"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-1"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-4"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-2"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-6"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-6"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-8"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-47"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-94"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-64"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-66"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-11"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-45"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-44"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-86"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-3"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="marker5092-2"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path5094-5"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-04"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-33"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="marker5620"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path5622"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-2"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-0"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-30"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-69"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-39"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-29"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-1-7"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path3984-8-3"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-452.36217)"
+     id="layer1">
+    <g
+       transform="translate(182.29932,-76.120163)"
+       id="g3763">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.492752"
+         y="924.06494"
+         id="text3755"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.492752"
+           y="924.06494"
+           id="tspan3757">District</tspan><tspan
+           x="93.492752"
+           y="939.06494"
+           id="tspan3759">Magistrates'</tspan><tspan
+           x="93.492752"
+           y="954.06494"
+           id="tspan3761">Courts</tspan></text>
+    </g>
+    <g
+       transform="translate(323.02059,-76.120163)"
+       id="g3763-4">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-7"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.492752"
+         y="924.06494"
+         id="text3755-0"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.492752"
+           y="924.06494"
+           id="tspan3803">Regional</tspan><tspan
+           x="93.492752"
+           y="939.06494"
+           id="tspan3759-4">Magistrates'</tspan><tspan
+           x="93.492752"
+           y="954.06494"
+           id="tspan3761-0">Courts</tspan></text>
+    </g>
+    <g
+       transform="translate(252.65996,-182.24313)"
+       id="g3763-7">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-4"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.343338"
+         y="931.56494"
+         id="text3755-8"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.343338"
+           y="931.56494"
+           id="tspan3847">High Court</tspan><tspan
+           x="93.343338"
+           y="946.56494"
+           id="tspan3127">Divisions</tspan></text>
+    </g>
+    <g
+       transform="translate(252.65996,-288.4839)"
+       id="g3763-7-8">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-4-8"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.536697"
+         y="930.29639"
+         id="text3755-8-7"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.536697"
+           y="930.29639"
+           id="tspan3847-3">Supreme Court</tspan><tspan
+           x="93.536697"
+           y="945.29639"
+           id="tspan3901">of Appeal</tspan></text>
+    </g>
+    <g
+       transform="translate(252.65996,-394.72469)"
+       id="g3763-7-6">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-4-7"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="94.008377"
+         y="931.56494"
+         id="text3755-8-9"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="94.008377"
+           y="931.56494"
+           id="tspan3847-8">Constitutional</tspan><tspan
+           x="94.008377"
+           y="946.56494"
+           id="tspan3965">Court</tspan></text>
+    </g>
+    <path
+       d="m 346.44567,717.74676 0,-34.85105"
+       id="path3969-9"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       d="m 346.44567,611.34331 0,-34.85105"
+       id="path3969-6"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       d="m 286.5964,740.68098 -28.82745,0 0,-200.81481 27.0597,0"
+       id="path4820"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-1)" />
+    <g
+       transform="translate(323.02059,30.266984)"
+       id="g3763-7-5">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-4-2"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.686111"
+         y="931.56494"
+         id="text3755-8-1"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.686111"
+           y="931.56494"
+           id="tspan3847-34">Small Claims</tspan><tspan
+           x="93.686111"
+           y="946.56494"
+           id="tspan3881">Courts</tspan></text>
+    </g>
+    <g
+       transform="translate(182.29932,30.266984)"
+       id="g3763-7-5-7">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-4-2-8"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.563065"
+         y="924.06494"
+         id="text3755-8-1-6"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.563065"
+           y="924.06494"
+           id="tspan3921">Chiefs' and</tspan><tspan
+           x="93.563065"
+           y="939.06494"
+           id="tspan6102">Headmen's</tspan><tspan
+           x="93.563065"
+           y="954.06494"
+           id="tspan6104">Courts</tspan></text>
+    </g>
+    <path
+       d="m 512.02586,454.96858 0,594.78672"
+       id="path6213-3"
+       style="fill:none;stroke:#aaaaaa;stroke-width:5.21282625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:20.85130661, 20.85130661;stroke-dashoffset:0" />
+    <path
+       d="m 193.00568,454.96903 0,594.78677"
+       id="path6213"
+       style="fill:none;stroke:#aaaaaa;stroke-width:5.21282625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:20.85130661, 20.85130661;stroke-dashoffset:0" />
+    <path
+       d="m 192.26023,805.88843 320.38831,0"
+       id="path6235"
+       style="color:#000000;fill:none;stroke:#aaaaaa;stroke-width:4.87724352;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:19.50897456, 19.50897456;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="m 311.61815,824.04102 0,-34.85105"
+       id="path3969-9-5"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       d="m 384.80277,824.04102 0,-34.85105"
+       id="path3969-9-5-7"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       d="m 276.08504,930.1993 0,-34.85105"
+       id="path3969-9-5-0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       d="m 476.23775,964.8582 17.39537,0 0,-212.50982 -85.98867,-4.1e-4"
+       id="path4103"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-45)" />
+    <text
+       x="453.14099"
+       y="738.87488"
+       id="text4311"
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="453.14099"
+         y="738.87488"
+         id="tspan4313">(procedural</tspan><tspan
+         x="453.14099"
+         y="748.87488"
+         id="tspan4315">review only)</tspan></text>
+    <g
+       transform="translate(528.2053,-76.120163)"
+       id="g3763-7-2">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-4-1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.343338"
+         y="937.90186"
+         id="text3755-8-8"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.343338"
+           y="937.90186"
+           id="tspan3847-2">Labour Court</tspan></text>
+    </g>
+    <g
+       transform="translate(528.2053,-182.24313)"
+       id="g3763-7-2-3">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-4-1-8"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.756424"
+         y="931.56494"
+         id="text3755-8-8-8"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.756424"
+           y="931.56494"
+           id="tspan3847-2-5">Labour Appeal</tspan><tspan
+           x="93.756424"
+           y="946.56494"
+           id="tspan4371">Court</tspan></text>
+    </g>
+    <path
+       d="m 621.991,823.74676 0,-34.85105"
+       id="path3969-9-55"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       d="m 562.31373,964.85817 -24.36244,0 0,-318.75078 -129.80139,0"
+       id="path4397"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-86)" />
+    <path
+       d="m 454.00025,645.92189 0,-94.38872 -45.89593,0"
+       id="path4607"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-86)" />
+    <g
+       transform="translate(528.2053,-288.4839)"
+       id="g3763-7-2-9">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-4-1-0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="93.343338"
+         y="937.90186"
+         id="text3755-8-8-6"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="93.343338"
+           y="937.90186"
+           id="tspan3847-2-4">Electoral Court</tspan></text>
+    </g>
+    <g
+       transform="translate(234.29932,44.661005)"
+       id="g5414">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="328.18372"
+         y="885.68927"
+         id="rect2985-4-1-0-6"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="387.79132"
+         y="916.00781"
+         id="text3755-8-8-6-2"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="387.79132"
+           y="916.00781"
+           id="tspan3847-2-4-5">Competition</tspan><tspan
+           x="387.79132"
+           y="931.00781"
+           id="tspan5184">Appeal Court</tspan></text>
+    </g>
+    <g
+       transform="translate(171.01736,30.266984)"
+       id="g3763-6">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="-122.87326"
+         y="900.08331"
+         id="rect2985-76"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="-63.658253"
+         y="931.56494"
+         id="text3755-3"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="-63.658253"
+           y="931.56494"
+           id="tspan5069">Military Judges'</tspan><tspan
+           x="-63.658253"
+           y="946.56494"
+           id="tspan6108">Courts</tspan></text>
+    </g>
+    <g
+       transform="translate(13.86636,-76.120163)"
+       id="g3763-4-9">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="34.27774"
+         y="900.08331"
+         id="rect2985-7-1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="94.251541"
+         y="930.40186"
+         id="text3755-0-4"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="94.251541"
+           y="930.40186"
+           id="tspan5078">Senior Military</tspan><tspan
+           x="94.251541"
+           y="945.40186"
+           id="tspan6115">Judges' Courts</tspan></text>
+    </g>
+    <g
+       transform="translate(-372.72934,-67.339026)"
+       id="g5383">
+      <rect
+         width="119.01595"
+         height="69.015945"
+         x="420.87344"
+         y="785.1792"
+         id="rect2985-4-0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.98405188;stroke-opacity:1" />
+      <text
+         x="480.08844"
+         y="815.49774"
+         id="text3755-8-1-5"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+           x="480.08844"
+           y="815.49774"
+           id="tspan3847-0">Courts of</tspan><tspan
+           x="480.08844"
+           y="830.49774"
+           id="tspan5127">Military Appeals</tspan></text>
+    </g>
+    <path
+       d="m 276.08504,930.1993 0,-34.85105"
+       id="path3969-9-5-0-3"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       d="m 107.65208,823.82745 0,-34.85105"
+       id="path3969-9-5-0-9-6"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       d="m 167.26604,764.014 117.61197,0"
+       id="path5849"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-39)" />
+    <text
+       x="227.48479"
+       y="747.78766"
+       id="text4311-4"
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="227.48479"
+         y="747.78766"
+         id="tspan4315-3">(procedural</tspan><tspan
+         x="227.48479"
+         y="757.78766"
+         id="tspan6215">review only)</tspan></text>
+    <text
+       x="352.0275"
+       y="1035.0438"
+       id="text6550"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#aaaaaa;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+         x="352.0275"
+         y="1035.0438"
+         id="tspan6552">Lower courts</tspan></text>
+    <text
+       x="352.34976"
+       y="483.69659"
+       id="text6550-7"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#aaaaaa;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+         x="352.34976"
+         y="483.69659"
+         id="tspan6552-6">Superior courts</tspan></text>
+    <path
+       d="m 47.84752,959.75352 -28.82745,0 0,-200.81481 27.0597,0"
+       id="path4820-6"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-1)" />
+    <text
+       x="97.317764"
+       y="1033.9138"
+       id="text6550-2"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#aaaaaa;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+         x="97.317764"
+         y="1033.9138"
+         id="tspan6552-8">Military courts</tspan></text>
+    <text
+       x="607.15015"
+       y="1033.9138"
+       id="text6550-29"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#aaaaaa;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+         x="607.15015"
+         y="1033.9138"
+         id="tspan6552-0">Specialist courts</tspan></text>
+    <path
+       d="m 621.991,158.39268 0,-82.55568 -213.8394,0"
+       transform="translate(0,452.36217)"
+       id="path3130"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-1-7)" />
+    <path
+       d="m 562.32005,752.34816 -24.01168,0"
+       id="path4248"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:none" />
+  </g>
+</svg>

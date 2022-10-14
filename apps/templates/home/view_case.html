@@ -1,0 +1,50 @@
+{% extends "layouts/base2.html" %}
+
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<style> 
+
+th {
+    text-align: center;
+  }
+  
+  td{
+  text-align: center;
+  }
+  
+  td.left{
+  text-align: left;
+  width: 1px;
+  white-space: nowrap;
+  }
+  
+  td.fitwidth {
+      width: 1px;
+      white-space: nowrap;
+  }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+<body>
+<h1>{{case.case_name}}</h1>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="col-12">
+        <div class="card card-chart">
+          <div class="card-header ">
+             <p>{{case.case_description}}</p>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+{% endblock content %}

@@ -1,0 +1,186 @@
+>{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+  <h3>Pending cases</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card card-chart">
+          <div class="card-header">
+            <div class="card-category">
+            <h4 class="title">Civil - 2021 (in thousand)</h4>
+          </div>
+          <div class="card-body">
+            <div class="chart-area">
+              <canvas id="chartLinePurple"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+      <div class="col-lg-12">
+        <div class="card card-chart">
+          <div class="card-header">
+            <div class="card-category">
+              <h4 class="title" >Criminal - 2021 (in thousand)</h4>
+          </div>
+          <div class="card-body">
+            <div class="chart-area">
+              <canvas id="chartLineGreen"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-12">
+      <div class="card ">
+        <div class="card-header">
+          <br>
+          <h3 class="title"> &nbsp &nbsp &nbsp Case Clearnace Rate - 2021</h3>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table tablesorter " id="">
+              <thead class=" text-primary">
+                <tr>
+                  <th class="text-center">
+                      Court
+                  </th>
+                  <th class="text-center">
+                      Cases Instituted
+                  </th>
+                  <th class="text-center">
+                      Cases Disposed
+                  </th>
+                  <th class="text-center">
+                    Clearnace Rate(%)
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td class="text-center">
+                      Madras High Court
+                    </td>
+                    <td class="text-center">
+                      133766 
+                    </td>
+                    <td class="text-center">
+                     146244
+                    </td>
+                    <td class="text-center">
+                      109.00
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center">
+                          Delhi High Court
+                    </td>
+                    <td class="text-center">
+                     37896
+                    </td>
+                    <td class="text-center">
+                      27490
+                    </td>
+                    <td class="text-center">
+                     72.54 
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center">
+                          Punjab High Court
+                    </td>
+                    <td class="text-center">
+                      683845
+                    </td>
+                    <td class="text-center">
+                      550109
+                    </td>
+                    <td class="text-center">
+                      79.14
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center">
+                          Gujarath High Court
+                    </td>
+                    <td class="text-center">
+                    73383
+                    </td>
+                    <td class="text-center">
+                    58544
+                    </td>
+                    <td class="text-center">
+                     81.03 
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center">
+                          Bombay High Court
+                    </td>
+                    <td class="text-center">
+                     85646 
+                    </td>
+                    <td class="text-center">
+                     57835
+                    </td>
+                    <td class="text-center">
+                      67.52
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center">
+                          Karnataka High Court
+                    </td>
+                    <td class="text-center">
+                      136537
+                    </td>
+                    <td class="text-center">
+                      89988
+                    </td>
+                    <td class="text-center">
+                      102.13
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center">
+                          Haryana High Court
+                    </td>
+                    <td class="text-center">
+                      770619
+                    </td>
+                    <td class="text-center">
+                      522203
+                    </td>
+                    <td class="text-center">
+                      66.18
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initDashboardPageCharts();
+
+    });
+  </script>
+
+{% endblock javascripts %}
